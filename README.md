@@ -17,13 +17,13 @@
 
 ---
 
-## 👋 About This Project
+## About This Project
 
 I'm **Harmeet Dhillon**, a robotics engineer passionate about autonomous navigation and localization systems. This project implements a stereo visual-inertial odometry system using the **Multi-State Constraint Kalman Filter (MSCKF)** algorithm—a fundamental technique for enabling robots to understand their motion in 3D space. By fusing high-frequency IMU measurements with visual features from stereo cameras, this system achieves robust and accurate pose estimation essential for autonomous navigation, drone flight control, and mobile robotics. This work deepens my understanding of sensor fusion, state estimation, and the mathematical foundations that power SLAM systems.
 
 ---
 
-##  Overview
+## Overview
 
 **Visual-Inertial Odometry (VIO)** estimates the 6-DOF pose (position and orientation) of a moving platform by combining visual information from cameras with inertial measurements from an IMU (Inertial Measurement Unit). Unlike pure visual odometry, VIO provides:
 
@@ -36,19 +36,19 @@ This implementation uses the **Multi-State Constraint Kalman Filter (MSCKF)**, w
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎥 **Stereo Vision Processing** - Leverages stereo camera pairs for robust feature triangulation
-- 📐 **IMU Integration** - High-frequency gyroscope and accelerometer fusion
-- 🔧 **MSCKF Algorithm** - Efficient state estimation with sliding window optimization
-- 📊 **Bias Calibration** - Automatic gyroscope and accelerometer bias correction
-- ⚡ **Runge-Kutta Integration** - 4th order numerical integration for state propagation
-- 🎯 **Bundle Adjustment** - Kalman filter-based optimization with QR decomposition
-- 📈 **Trajectory Visualization** - Real-time pose plotting (optional with Pangolin)
+- **Stereo Vision Processing** - Leverages stereo camera pairs for robust feature triangulation
+- **IMU Integration** - High-frequency gyroscope and accelerometer fusion
+- **MSCKF Algorithm** - Efficient state estimation with sliding window optimization
+- **Bias Calibration** - Automatic gyroscope and accelerometer bias correction
+- **Runge-Kutta Integration** - 4th order numerical integration for state propagation
+- **Bundle Adjustment** - Kalman filter-based optimization with QR decomposition
+- **Trajectory Visualization** - Real-time pose plotting (optional with Pangolin)
 
 ---
 
-## 🔧 Prerequisites
+## Prerequisites
 
 - **Python 3.6+**
 - **NumPy** - Numerical computations
@@ -58,7 +58,7 @@ This implementation uses the **Multi-State Constraint Kalman Filter (MSCKF)**, w
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -96,7 +96,7 @@ EuRoC_MAV_dataset/
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Basic Execution (No Visualization)
 
@@ -119,7 +119,7 @@ python vio.py --view --path path/to/EuRoC_MAV_dataset/MH_01_easy
 
 ---
 
-## 🔬 Algorithm Pipeline
+## Algorithm Pipeline
 
 The VIO system follows this sequential processing pipeline:
 
@@ -193,7 +193,7 @@ P = (I - KH) P (I - KH)ᵀ + K Rn Kᵀ
 
 ---
 
-## 📊 Results
+## Results
 
 ### Performance Metrics
 
@@ -219,7 +219,7 @@ The system successfully tracks the drone's trajectory throughout the Machine Hal
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Visual-Inertial-Odometery/
@@ -235,7 +235,7 @@ Visual-Inertial-Odometery/
 
 ---
 
-## 🔍 Technical Details
+## Technical Details
 
 ### Multi-State Constraint Kalman Filter (MSCKF)
 
@@ -267,7 +267,7 @@ Where:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -279,7 +279,7 @@ Where:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Areas for improvement:
 - [ ] Loop closure detection
@@ -290,13 +290,13 @@ Contributions are welcome! Areas for improvement:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This implementation is based on:
 - **"A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation"** by Mourikis & Roumeliotis
@@ -305,7 +305,7 @@ This implementation is based on:
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Harmeet Dhillon**
 
@@ -317,8 +317,8 @@ This implementation is based on:
 
 <div align="center">
 
-**If you find this project helpful, please consider giving it a ⭐**
+**If you find this project helpful, please consider giving it a star**
 
-Made with ❤️ for autonomous robotics
+Made for autonomous robotics
 
 </div>
